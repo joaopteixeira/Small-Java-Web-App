@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+
+    <title>Listar</title>
+
+
+
+    <div class="table">
+      <a th:href="@{/}"><div class="btback"><p>Back</p></div></a>
+        <div class="logo"><p></p>
+        </div>
+    </div>
+  </head>
+      <body>
+      <table class="table">
+  <thead>
+    <tr>
+      <th cope="col">Local Reparacao</th>
+      <th cope="col">Data Comeco</th>
+      <th cope="col">Data Fim</th>
+      <th cope="col">Descricao Avaria</th>
+      <th cope="col">Pecas Colocadas</th>
+      <th cope="col">Relatorio Intervencao</th>
+      <th cope="col">Opções</th>
+
+    </tr>
+  </thead>
+
+    <tbody>
+          <div class="form-group">
+          <tr th:each="ModelTeste : ${ModelTeste}" >
+
+                <td scope="row" th:text="${ModelTeste.LocalReparacao}">
+
+                <td scope="row" th:text="${ModelTeste.DataComeco}">
+
+                <td scope="row" th:text="${ModelTeste.DataFim}">
+
+                <td scope="row" th:text="${ModelTeste.DescricaoAvaria}">
+
+                <td scope="row" th:text="${ModelTeste.PecasColocadas}">
+
+                <td scope="row" th:text="${ModelTeste.RelatorioIntervencao}">
+
+          </td>
+
+          <td>
+            <form action="/update" method="GET">
+              <input type="hidden" name="id" th:value="${ModelTeste.id}">
+            <input type="submit" value="Editar"class="btn btn-primary mb-2">
+            </form>
+            <form action="/delete" method="GET">
+              <input type="hidden" name="id" th:value="${ModelTeste.id}">
+            <input type="submit" value="Apagar"class="btn btn-primary mb-2">
+            </form>
+          </td>
+
+        </tr>
+      </div>
+        </table>
+    </tbody>
+    </body>
+</html>

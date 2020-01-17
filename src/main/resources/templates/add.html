@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+
+    <title>Adicionar </title>
+  </head>
+  <body>
+
+    <div class="head">
+    <a th:href="@{/}"><div class="btback"><p>Back</p></div></a>
+    </div>
+
+
+	<form action="/view" method="GET">
+	<div class="form-add">
+
+	<label for="LocalReparacao">Local Reparaçao</label>
+	<input type="text" class="formas" name="LocalReparacao" >
+
+  <label for="DataComeco">Data Começo</label>
+	<input type="date" class="formas" name="DataComeco" >
+
+  <label for="DataFim">Data Fim</label>
+  <input type="date" class="formas" name="DataFim" >
+  <br>
+
+  <label for="DescricaoAvaria">Descrição Avaria</label>
+  <input type="text" class="formas" name="DescricaoAvaria" >
+
+
+  <label for="PecasColocadas">Peças Colocadas</label>
+	<input type="text" class="formas" name="PecasColocadas" >
+<br>
+  <label for="RelatorioIntervencao">Relatório Intervenção</label>
+	<input type="text" class="formas" name="RelatorioIntervencao" >
+
+
+
+
+  <br>
+
+  <br>
+
+	   </div>
+      <br>
+			</div>
+
+    <div class="wb">
+		<input type="submit" value="submeter" class="btn btn-primary mb-2" />
+	</form>
+</div>
+
+
+    </body>
+</html>

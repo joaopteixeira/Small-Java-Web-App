@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+
+    <title></title>
+  </head>
+  <body>
+
+    <div class="head">
+      <a th:href="@{/}"><div class="btback"><p>Back</p></div></a>
+        </div>
+    </div>
+<br>
+
+<center><br>
+<h2>Procurar<h2>
+<br>
+
+<form action="/proc" method="Get">
+  <label>Local de Reparaçao a procurar</label>
+  <br>
+  <input type="text" name="procurar" th:value="${procurar}"/>
+  </div>
+	<input type="submit" value="submeter" class="btn btn-primary mb-2"/>
+</form>
+
+<br>
+
+<form action="/procPecas" method="Get">
+  <label>Pecas a procurar</label>
+  <br>
+  <input type="text" name="procurar" th:value="${procurar}"/>
+  </div>
+	<input type="submit" value="submeter" class="btn btn-primary mb-2"/>
+</form>
+
+
+    </body>
+</html>

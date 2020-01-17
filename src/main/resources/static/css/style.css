@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body{
+
+background-color: #fff;
+
+}
+
+
+.apagar{
+  margin-top: -10.2%;
+  margin-left: 9%;
+  position: static;
+
+}
+
+.btback{
+  width: 100px;
+  display: inline-grid;
+  float: left;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-color: #9e895b;
+}
+
+.btback p{
+  text-align: center;
+align-self: center;
+
+}
+
+.btback:hover{
+  background-color: #635537;
+
+  cursor: pointer;
+}
+
+
+.prin{
+  width: 100%;
+  display: table;
+  height: 110vh;
+  color: GREEN;
+}
+
+.men{
+  text-decoration: none;
+  color:black;
+  float: center;
+}
+
+.table{
+
+  font-size: 24px;
+  color: black;
+  background-color: lightgrey;
+
+}
+
+
+
+.pane:hover{
+
+
+cursor: pointer;
+}
+
+
+
+
+.topo{
+
+
+}
+
+
+.wrap {
+	width:500px;
+	height: auto;
+	margin: auto;
+
+}
+
+
+.form-add{
+  width: 50%;
+  margin: 0 25%;
+}

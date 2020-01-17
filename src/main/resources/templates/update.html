@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+
+    <title>Update </title>
+  </head>
+  <body>
+
+    <div class="head">
+    <a th:href="@{/}"><div class="btback"><p>Back</p></div></a>
+    </div>
+
+
+<form action="/view" method="Get">
+	<div class="form-add">
+    <input type="hidden" name="id" th:value="${ModelTeste.id}"/>
+
+  <label>Local Reparaçao</label>
+  <input type="text" name="LocalReparacao" th:value="${ModelTeste.LocalReparacao}"/>
+
+
+<label>Data Começo</label>
+<input type="date" name="DataComeco" th:value="${ModelTeste.DataComeco}"/>
+
+
+<label>Data Fim</label>
+<input type="date" name="DataFim" th:value="${ModelTeste.DataFim}"/>
+
+<br>
+
+<label>Descrição Avaria</label>
+<input type="text" name="DescricaoAvaria" th:value="${ModelTeste.DescricaoAvaria}"/>
+
+
+<label>Peças Colocadas</label>
+<input type="text" name="PecasColocadas" th:value="${ModelTeste.PecasColocadas}"/>
+
+<br>
+<label>Relatório Intervenção</label>
+<input type="text" name="RelatorioIntervencao" th:value="${ModelTeste.RelatorioIntervencao}"/>
+
+
+
+  </div>
+
+		<input type="submit" value="submeter" class="btn btn-primary mb-2"/>
+
+</form>
+
+
+    </body>
+</html>

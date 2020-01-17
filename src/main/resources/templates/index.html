@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+    <title></title>
+
+<img th:src=@{/logo.png}>
+
+
+
+  </head>
+  <body>
+<center>
+<h1>Reparações Tó Guerreiro<h1>
+  <br>
+  <h6> Só não repara o que não se repara
+
+<br>
+<br>
+
+  <a href="/add"><input type="submit" class="btn btn-primary mb-2" value="Adicionar " ></input></a>
+  <a href="/list"> <input type="submit" class="btn btn-primary mb-2" value="Listar " ></input></a>
+  <a href="/procurar" ><input type="submit" class="btn btn-primary mb-2" value="Procurar " ></input></a>
+</center>
+
+
+
+
+
+<!--
+<br>
+  <form th:action="@{/list}" method="GET">
+  <input type="submit" class="btn btn-primary mb-2" value="Listar Todos" ></input>
+</form>
+
+<br>
+  <form th:action="@{/procurar}" method="GET">
+  <input type="submit" class="btn btn-primary mb-2" value="Procurar" ></input>
+</form>
+-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" th:href=@{/css/style.css} href="/css/style.css" media="screen">
+    <link rel="stylesheet" th:href=@{/css/bootstrap.css} href="../static/css/bootstrap.css">
+
+    <title></title>
+  </head>
+  <body>
+
+    <div class="head">
+      <a th:href="@{/}"><div class="btback"><p>Back</p></div></a>
+        </div>
+    </div>
+<br>
+
+<center><br>
+  <div class="alert alert-success">
+<h2>Foi Inserido com Sucesso <h2>
+  </div>
+
+	<p><span th:text="${ModelTeste.DescricaoAvaria}"></span></p>
+    <!--    <input type="hidden" name="id" th:value="${ModelTeste.id}">-->
+
+    </body>
+</html>
